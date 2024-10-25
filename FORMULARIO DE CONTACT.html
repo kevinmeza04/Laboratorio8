@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario Básico</title>
+	<link rel="stylesheet" type="text/css" href="style contact.css">
+</head>
+
+<body>
+  <div class="container"><!Estilo a travez de una clase>
+  	<h1>Formulario de Contacto</h1>
+  	<form>
+     <label>* Nombre:</label>
+     <input type="text" id="nombre" name="nombre" required>
+     <label>* Correo Electronico:</label>
+     <input type="email" id="email" name="email" required>
+     <label>Telefono:</label>
+     <input type="tel" name="telefono" minlength="8">
+     <label>Celular: </label>
+     <input type="tel" name="celular" maxlength="10">
+     <label>Dirección:</label>
+     <input type="direccion" name="direccion">
+     <label>* Pregunta/Duda:</label>
+     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+     <label>* Pais:</label>
+     <select id="pais" name="pais" required>
+     	<option disabled="" selected="">Selecciona tu país</option>
+     	<option value="co">Colombia</option>
+     	<option value="ec">Ecuador</option>
+     	<option value="pe">Peru</option>
+     	<option value="ve">Venezuela</option>
+     	<option value="ch">Chile</option>
+     	<option value="ur">Uruguay</option>
+     </select>
+     <input type="submit" name="" value="Enviar">
+  	</form>
+  	<p>* Campo Obligatorio</p>
+    <p>Pagina Principal: <a href="file:///C:/Users/Administrador/Desktop/Nueva%20carpeta/kevinproyecto.html">Pagina Principal</a></p>
+  </div>
+</body>
+</html>
