@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
-     let esMayorDeEdad = true;
-        let tieneLicencia = false;
-
-        let puedeConducir = esMayorDeEdad && tieneLicencia;
-        console.log("Puede conducir:", puedeConducir);
-
-        let mensaje = `Hola, ${nombre}. Tienes ${edad} años y ${esEstudiante ? "eres estudiante." : "no eres estudiante."}`;
-        console.log(mensaje);
-
-    </script>
+    let esMayorDeEdad = true; 
+let tieneLicencia = true;  
+if (esMayorDeEdad && tieneLicencia) {
+    console.log("La persona puede conducir.");
+}
+ else {
+    console.log("La persona no puede conducir.");
+}
+let nombre = "Juan";
+let mensajeBienvenida = `¡Bienvenido, ${nombre}! ${esMayorDeEdad ? 'Eres mayor de edad.' : 'Eres menor de edad.'} ${tieneLicencia ? 'Tienes licencia para conducir.' : 'No tienes licencia para conducir.'}`;
+console.log(mensajeBienvenida);
+</script>
 </body>
 </html>
 
