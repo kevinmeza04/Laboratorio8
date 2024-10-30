@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundo Punto</title>
+</head>
+<body>
+    <script>
+function obtenerInformacion() {
+    const nombre = prompt("Por favor, ingresa tu nombre:");
+    const edad = parseInt(prompt("Por favor, ingresa tu edad:"));
+    const esEstudiante = prompt("¿Eres estudiante? (si/no)").toLowerCase() === "si";
+
+    return { nombre, edad, esEstudiante };
+}
+function mostrarMensaje() {
+    const { nombre, edad, esEstudiante } = obtenerInformacion();
+    const esMayorDeEdad = edad >= 18;
+    const derechoADescuento = esEstudiante ? "tienes derecho a un descuento." : "no tienes derecho a un descuento.";
+    let mensaje = `Hola, ${nombre}! `;
+    if (esMayorDeEdad) {
+        mensaje += "Eres mayor de edad. ";
+    } else {
+        mensaje += "Eres menor de edad. ";
+    }
+    mensaje += `Además, ${derechoADescuento}`;
+    console.log(mensaje);
+}
+mostrarMensaje();
+</script>
+</body>
+</html>
