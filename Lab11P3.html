@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundo Punto</title>
+</head>
+<body>
+    <script>
+let compra = prompt ("ingrese El Valor A Pagar:")
+ compra = parseFloat(compra);
+ if (compra>= 0 && compra <=100){
+    if (compra >=100){
+        console.log("Descuento del 10%");
+    }else if (compra >=99){
+        console.log("sin descuento");
+    } else{ 
+    console.log("Reprobado");
+ }
+}else {
+    console.log("sin descuento");
+}
+</script>
+</body>
+</html>
