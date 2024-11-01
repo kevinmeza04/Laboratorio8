@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundo Punto</title>
+</head>
+<body>
+    <script>
+let contraseña;
+const contraseñaCorrecta = "1234"; 
+do {
+    contrasena = prompt("Ingresa la contraseña:");
+} while (contraseña !== contraseñaCorrecta);
+console.log("Contraseña correcta, acceso concedido.");
+</script>
+</body>
+</html>
