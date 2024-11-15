@@ -1,0 +1,8 @@
+function solicitarDatos() {
+    let num1 = parseFloat(prompt("Ingrese el primer número:"));
+    let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+    let operacion = prompt("Ingrese la operación (suma, resta, multiplicacion, division):").toLowerCase();
+    
+    let resultado = calculadora(num1, num2, operacion);
+    console.log("Resultado:", resultado);
+}

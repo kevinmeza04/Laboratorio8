@@ -1,0 +1,14 @@
+function calculadora(a, b, operacion) {
+    switch (operacion) {
+        case 'suma':
+            return sumar(a, b);
+        case 'resta':
+            return restar(a, b);
+        case 'multiplicacion':
+            return multiplicar(a, b);
+        case 'division':
+            return dividir(a, b);
+        default:
+            return "Operación no válida";
+    }
+}
